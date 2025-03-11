@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+
+}
+body{
+  font-family: 'Inter', sans-serif;
+  font-weight:400;
+  font-size: 18;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.teste {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border-radius: 7px;
+  background: #FFE492;
+}
+.backgrond {
+  color: #fff;
+  background-color: #0B1D41;
+}
+.linhaFundo {
+  background: url('./img/Element.svg') center center no-repeat;
+}
+.linhaFundo::before {
+
+  z-index: -1; /* Para colocar a pseudo-classe atrás do conteúdo */
+}
+.sobre {
+  width: 100%;
+}
+
+
+.theme-button{
+ display:inline-block;
+ background: #4F9CF9;
+  border-radius: 8px;
+  padding: 16px 24px !important;   
+  text-decoration: none;
+  color: #ffffff; 
+  transition: 0.3s;  
+}
+.theme-button:hover{
+  color:#ffffff;
+}
+.theme-button-two{
+     display:inline-block;
+     background: #FFE492;
+      border-radius: 8px;
+      padding: 16px 24px !important;
+    }
+    .theme-button-three{
+      display:inline-block;
+      background: #ffffff;
+      border: 1px solid #FFE492;
+       border-radius: 8px;
+       padding: 16px 24px !important;
+       text-decoration: none;       
+     }
+    .header-area .theme-button{
+      margin-left: 22px;
+    }
+    .header-area .theme-button-two{
+      margin-left: 22px;
+    }
+.theme-button i {
+     margin-left: 10px;
+}
+.theme-text h3{
+  font-size: 58px;
+  margin-bottom: 15px;
+}
+
+.theme-text h3 span {
+  position: relative;
+  z-index: 1;
+}
+.theme-text h3 span::after {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 65px;
+ left: 0;
+ bottom: 0;
+ z-index: -1;
+ background-image: url(./img/element.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+/*
+header-area css
+*/
+.header-area{
+padding:16px 0;
+}
+
+.header-area .nav-link{
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+   font-weight:500;
+   padding: 16px 24px !important;  
+}
+.header-area .navbar-toggler{
+  border: none;
+  box-shadow:none;
+}
+
+.header-area .theme-button{
+  margin-left: 22px;
+}
+.header-area .theme-button-two{
+  margin-left: 22px;
+}
+/*
+Hero CSS
+*/
+.hero-area {
+  padding: 140px;
+  background-image: url(img/Hero-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero-text h3{
+font-weight: 700;
+font-size: 40px;
+}
+.hero-area .theme-button {
+  margin-top:30px;
+}
+
+/*
+Management-area css
+*/
+.management-area{
+  background-color: #fff;
+  padding: 140px 0;
+}
+.work-management{
+  margin-top: 100px;
+}
+.work-management .theme-text h3 span::after{
+  background-image: url(img/work-element.png);
+  background-size: contain;
+  background-position: bottom;
+}
+
+/*
+extension area css
+*/
+.extension-area{
+  padding: 140px 0;
+} 
+
+.extension-area .theme-text h3 span::after {
+  background-image: url(img/extension-element.png);
+  background-size: contain;
+  background-position: bottom;
+  width: 400px;
+  height: 38px;
+  left: -90px;
+  top: 49px;
+}
+
+.extension-area .theme-text h3 {
+color:#ffffff;
+}
+.extension-area .theme-text p {
+  color:#ffffff ;
+}
+
+/*
+Customise area css
+*/
+.customise-area{
+  background-color: #ffffff;
+  padding: 140px 0;
+}
+.customise-area .theme-text h3 span::after {
+  background-image: url(img/customise-element.png);
+  background-size: contain;
+  background-position: bottom;
+  width: 512px;
+  height: 60px;
+  left: -2px;
+  top: 20px;
+}
+
+/*
+pricing area css
+*/
+.pricing-area{
+  padding: 140px 0;
+  background-color: #ffffff;
+}
+.pricing-area .theme-text h3 span::after {
+  background-image: url(img/plan-element.png);
+  background-size: contain;
+  background-position: bottom;
+  left: 10px;
+}
+.singel-pricing{
+  color: #212529;
+  border: 1px solid rgb(114, 0, 244);
+  border-radius: 10px;
+  padding: 40px 44px;
+}
+.singel-pricing h4 {
+font-size: 24px;
+font-weight: 500;
+}
+.singel-pricing h2 {
+font-size: 36px;
+font-weight: 700;
+margin-top: 20px;
+}
+.singel-pricing ul{
+  margin: 0;
+  padding: 0;
+  margin: 25px 0;
+}
+.singel-pricing ul li{
+list-style: none;
+margin-bottom: 28px;
+display: flex;
+align-items: center;
+}
+.singel-pricing ul li :last-child{
+  margin: 0;
+}
+.singel-pricing img {
+  height: 21px !important;
+  width: 21px !important;
+  margin-right: 10px !important;
+}
+.special-pricing{
+  padding: 60px 44px;
+  color: #ffffff;
+}
+.special-pricing h2{
+  color:#8800ff ;
+}
+.pricing-area .owl-stage{
+  display: flex;
+  align-items: center;
+}
+.pricing-area .owl-dots{
+  text-align: center;
+}
+.pricing-area .owl-dots button {
+  height: 10px;
+  width: 10px;
+  background-color: #4F9CF9!important;
+  border-radius: 50%;
+  margin: 0 5px; 
+}
+.pricing-area .owl-dots button.active{
+}
+
+/*
+your work area
+*/
+.your-work-area{
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.your-work-area .theme-text h3 span::after {
+  background-image: url(./img/element.png);
+  background-size: contain;
+  background-position: bottom;
+  left: 14px;
+}
+
+.bordinha {
+  padding: auto 10ox;
+}
+
+
+
+/*
+Sponsors Area CSS
+*/
+.sponsors-area {
+  padding: 140px 0;
+  background-color:#fff;
+}
+.sponsors-area  .theme-text h3 span::after {
+  background-image: url(img/sponsors-element.png);
+  background-size: contain;
+  background-position: bottom;
+  left: 4px;
+  bottom: -9px;
+}
+.sponsors-area .theme-text{
+  margin-bottom: 80px;
+}
+.single-sponsors img {
+  height: 55px;
+  width: auto;
+ }
+ 
+
+/*
+Apps Area CSS
+*/
+.apps-area{
+  padding: 140px 0;
+  background-image: url(img/apps-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.apps-area .theme-text h3{
+  color: #ffffff;
+}
+.apps-area .theme-text p{
+  color: #ffffff;
+}
+
+/*
+Testimonial area css
+*/
+.testimonial-area{
+  padding: 140px 0;
+  background-color: #fff;
+}
+.testimonial-area .theme-text h3 span::after {
+  background-image: url(img/says-element.png);
+  background-size: contain;
+  background-position: bottom;
+  width: 200px;
+  left: 23px;
+  top: -5px;
+}
+.testimonial-area .theme-text{
+  margin-bottom: 50px;
+}
+.single-testimonial{
+  background: #4F9CF9;
+box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding:50px 30px;
+color: #fff;
+transition: 0.3s;
+
+}
+.testimonial-text {
+  border-bottom: 1px solid #fff;
+}
+.single-testimonial:hover{
+  background-color: #fff;
+  color: #212529;
+  cursor: pointer;
+}
+.testimonial-text i{
+ font-size: 60px;
+}
+.testimonial-text p{
+  margin-bottom: 25px;
+}
+.testimonial-author{
+  margin-top: 40px;
+  display: flex;
+}
+.author-img{
+  margin-right: 30px;
+}
+.author-text h3{
+  font-size: 18px;
+}
+.author-text p{
+  margin-bottom: 0;
+}
+.testimonial-area .owl-dots{
+  text-align: center;
+  margin-top: 50px;
+}
+.testimonial-area .owl-dots button {
+  height: 10px;
+  width: 10px;
+  background-color: #4F9CF9!important;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.testimonial-area .owl-dots button.active{
+}
+
+
+/*
+trial area css
+*/
+.trial-area{
+  padding: 140px 0;
+}
+.trial-text h3{
+  font-size: 68px;
+}
+.trial-text p{
+  font-size: 24px;
+}
+.trial-area .theme-button{
+  margin: 20px 0;
+}
+.trial-img{
+  margin-top: 40px;
+}
+.trial-img a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+/*
+footer area css
+*/
+.footer-area{
+  border: 1px solid #2E4E73;
+  padding-top: 140px;
+}
+.footer-top{
+  padding-bottom: 60px;
+}
+.footer-about img {
+  margin-bottom: 15px;
+}
+.footer-link h3{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.footer-link ul{
+  margin: 0;
+  padding: 0;
+}
+.footer-link ul li{
+ list-style: none;
+}
+.footer-link a{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.footer-link a:hover{
+  color:#FFE492 ;
+}
+.footer-contact h3{
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.footer-bottom {
+  border-top: 1px solid #2E4E73;
+  padding: 32px 0;
+}
+.footer-lng a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-lng .dropdown-menu a{
+  color: #212529;
+}
+.footer-lng i {
+  margin-right: 10px;
+}
+.footer-social{
+  text-align: right;
+}
+.footer-social a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 32px;
+}
+
+@media (max-width:1399px){
+ .header-area{
+  font-size: 16px;
+ }
+}
+@media (max-width:1399px){
+  .header-area{
+   font-size: 14px;
+  }
+  .header-area .nav-link {
+    padding: 10px 15px !important;
+  }
+ }
+
+@media (max-width:991px){
+  /*
+  Defult css
+  */
+  .theme-text{
+    text-align: center;
+  } 
+  .theme-text h3{
+    font-size: 36px;
+  }
+  .header-area{
+    font-size: 18px;
+   }
+  /*
+  header area css
+  */
+  .theme-button{
+    width:100%;
+    text-align:center;
+     margin-left:0px;
+     margin-top:15px;    
+   }
+   .theme-button-two{
+    width:100%;
+    text-align:center ;     
+    margin-left: 0px; 
+    margin-top:15px;
+   } 
+   .header-area .nav-link{
+    padding:16px 0;  
+   } 
+   .header-area .nav-link{
+     position: relative; 
+    } 
+    .header-area .nav-link::after{
+     position: absolute; 
+     right:12px;
+     top:50%;
+     transform: translateY(-50%);
+    } 
+    
+    /*
+    hero-area css
+    */
+      .hero-area{
+    padding: 80px 0;
+  }
+  .hero-text{
+    text-align: center;
+  }
+  .hero-text h3{
+    font-size: 36px;
+  }
+  .hero-area .theme-button {
+    margin-bottom:50px;
+  }
+/*
+ management-area css
+ */
+.management-area .theme-button{
+    margin-bottom: 50px;
+   }
+   .management-area{
+    padding: 80px 0;
+  }
+  .work-management{
+    margin-top: 60px;
+  }
+ /*
+ extension-area css
+ */
+  .extension-area{
+    padding:80px 0;
+  
+  }
+  .extension-area .theme-button {
+    margin-bottom: 50px;
+  }
+/*
+customise-area css
+*/
+  .customise-area{
+    padding: 80px;
+  }
+/*
+pricing-area css
+*/
+  .pricing-area{
+    padding: 80px 0;
+  }
+  .singel-pricing{
+    margin-bottom: 30px;
+  } 
+
+  /*
+  your-work-area css
+  */
+  .your-work-area{
+    padding: 80px 0;
+  }
+
+ /*
+ your-task-area css
+ */
+     .your-task-area{
+      padding: 80px 0;
+    }
+  
+    /*
+    sponsors-area css 
+    */
+    .sponsors-area{
+      padding: 80px 0px;
+    }
+    .single-sponsors{
+      margin-bottom:50px ;
+     }
+     .single-sponsors:last-chils{
+      margin-bottom: 0;
+     }
+ /*
+ apps area css
+ */
+     .apps-area{
+      padding: 80px 0;
+    }
+    .apps-image{
+      margin-bottom: 50px;
+    }
+/*
+testimonial are css
+*/
+    .testimonial-area{
+      padding: 80px 0;
+    }
+
+/*
+trial area css
+*/
+    .trial-area{
+      padding:80px 0;
+    } 
+    .trial-text h3{
+      font-size: 32px;
+    }
+    .trial-text p{
+      font-size: 18px;
+    }
+    .trial-img a {
+      margin: 0;
+      margin-right:40px ;  
+    }
+
+    /*
+    footer area css
+    */
+
+    .footer-top{
+      text-align: center;
+    }
+    .footer-about{
+      margin-bottom: 40px;
+    }
+   .footer-link{
+    margin: 40px 0;
+   }
+   .footer-bottom {
+    border-top:none;
+  }
+   .footer-contact{
+    margin-top: 40px;
+   }
+   .footer-lng{
+    text-align: center;
+   }
+   .footer-copyright{
+    padding: 32px;
+   }
+   .footer-social {
+    text-align: center;
+    border-top: 1px solid #2E4E73;
+    padding-top: 32px;
+   }
+   .footer-social a {
+     margin: 0 16px;
+  }
+}
+/* Estilo básico da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* largura da barra de rolagem */
+}
+
+/* Rastreamento da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* cor de fundo da barra de rolagem */
+}
+
+/* Alça da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* cor da alça da barra de rolagem */
+  border-radius: 6px; /* bordas arredondadas da alça */
+}
+
+/* Hover sobre a alça da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* cor ao passar o mouse sobre a alça */
+}
