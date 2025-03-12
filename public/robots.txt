@@ -1,7 +1,2 @@
-Agente do usuário: *
- Permitir: /
-
-Agente do usuário: *
- Agente do usuário: *
- Permitir: /
-Permitir: /
+User-agent: *
+Allow: /
