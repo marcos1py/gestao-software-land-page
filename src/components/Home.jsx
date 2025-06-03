@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-
+import { useNavigate } from "react-router-dom";
 import BtnWhatsapp from "./BtnWhatsapp";
 
 const Home = () => {
+    const navigate = useNavigate();
     const handleClick = () => {
         fbq('track', 'Contact');
     };
@@ -23,15 +24,21 @@ const Home = () => {
                         <p className="mt-5 text-sky-400 text-xl">
                             Comece agora por apenas R$ 17,90/mês. Sem complicações!
                         </p>
-                        <div className="mt-9">
+                        <div className="mt-9 flex flex-wrap gap-4">
                             <a
                                 href="https://wa.me/5562993398590?text=Oi%2C+quero+saber+mais+sobre+o+software+de+gest%C3%A3o+de+projetos."
-                                className="bg-blue-600 hover:bg-blue-700 m-3 mt-9 text-white font-bold py-2 px-4 rounded"
+                                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                                 target="_blank"
                                 onClick={handleClick}
                             >
                                 Fale com um especialista agora!
                             </a>
+                            <button
+                                onClick={() => navigate('/cadastro')}
+                                className="bg-[#0B1D41] hover:bg-[#1a2d5c] text-white font-bold py-2 px-4 rounded transition-all duration-300"
+                            >
+                                Criar Conta
+                            </button>
                         </div>
                     </div>
                     <div className="w-full md:w-1/3">
